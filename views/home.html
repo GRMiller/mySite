@@ -1,0 +1,65 @@
+<section>
+  <h1>Garrett R. Miller</h1>
+
+  <p>UX/UI Designer & Web Developer</p>
+</section>
+
+
+
+<section>
+  <h2>My Latest Project</h2>
+
+  <h3 class="recentprojName">{{projects[1].headline}}</h3>
+
+  <img id="recentprojectImg" class="recentprojImg" ng-src="{{projects[1].img}}" />
+
+
+  <p class="recentdescription">{{projects[1].description}}</p>
+
+  <a href="{{projects[1].link}}">View the {{projects[1].headline}}</a>
+</section>
+
+
+
+<section>
+  <h2>A little bit about me...</h1>
+
+  <p>I'm a Detroit-native, big-dreaming, detail-sweating developer. I'm a graduate of U of D Jesuit High School, Michigan State University, and the Full Time Front-End Bootcamp at Grand Circus. </p>
+
+  <p>I believe in the power of good design to enrich our experiences. I believe in the ability of technology to reach into our lives and make us better. I believe in the forward progress of humanity. I don't believe in the status quo.</p>
+</section>
+
+<section>
+  <h2>My Journey Into Coding</h2>
+  <p> Lorem ipsum semper fi Lorem ipsum semper fi Lorem ipsum semper fi Lorem ipsum semper fi Lorem ipsum semper fi Lorem ipsum semper fi Lorem ipsum semper fi Lorem ipsum semper fi Lorem ipsum semper fi Lorem ipsum semper fi Lorem ipsum semper fi </p>
+
+  <h3>Study Topics</h3>
+  <ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>jQuery</li>
+    <li>Angular.js</li>
+    <li>Node.js</li>
+    <li>Adobe Photoshop</li>
+    <li>Survey Construction</li>
+    <li>Branding & Design Briefs</li>
+    <li>Wordpress Customization</li>
+    <li>SEO</li>
+    <li>UX/UI Design</li>
+    <li>Responsive Design</li>
+  </ul>
+</section>
+
+<section >
+  <h2>Portfolio</h2>
+
+  <div ng-repeat="project in projects">
+    <h3 class="recentprojName">{{project.headline}}</h3>
+
+    <a href="{{project.link}}"><img id="recentprojectImg" class="recentprojImg" ng-src="{{project.img}}" /></a>
+
+    <p class="recenttools">{{project.tools}}</p>
+  </div>
+
+</section>
